@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    background: #333;
+    overflow: hidden;
+             border-bottom: 3px solid yellow;
+}
+ .max-width{
+     width: 90%;
+     margin: auto;
+ }
+   /* headed section style */
+ .header .logo h1{
+     color: White;
+     padding: 0;
+     margin: 0;
+ }
+ .header .logo span{
+     color: yellow;
+ }
+ .header .logo{
+     float: left;
+ }
+ .header .topnav{
+     float: right;
+ }
+.topnav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.topnav ul li{
+    float: left;
+}
+.topnav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: White;
+    display: block;
+    padding: 11px;
+}
+.topnav ul li a:hover{
+    background: gray;
+}
+.logo-left{
+    float: left;
+    width: 90%;
+}
+.logo-right{
+    color: white;
+    float: right;
+    width: 10%;
+    font-size: 30px;
+    display: none;
+}
+
+/* home-section styling */
+.home-section{
+    background: url('image/domenico-loia-hGV2TfOh0ns-unsplash.jpg') no-repeat center center;
+    min-height: 500px;
+    background-size: cover;
+   
+}
+.home-section .home-left,.home-right{
+    float: left;
+}
+.home-section .home-left{
+    width: 40%;
+}
+.home-section .home-right{
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 100px;
+    font-size: 30px;
+    color: yellow;
+}
+.home-section .home-right button{
+    background: rgba(255, 255, 0,.7);
+    color: black;
+    padding: 7px 50px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    font-weight: 900;
+     font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.home-section .home-right button:hover{
+  background: black;
+  border: 1px solid white;
+  transition: .3s;
+ color: white;
+    
+}
+.home-content{
+    padding-top: 100px;
+}
+
+.home-overlay{
+  background: rgba(0,0,0,.6 );
+  min-height: 500px;
+}
+.home-section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* about-section styling */
+.about-section{
+    padding: 60px 0;
+    
+}
+.about-section-left{
+    float: left;
+    width: 40%;
+    animation-name: portfolio;
+}
+.about-section-right{
+    float: left;
+    width: 40%;
+    margin-top: 100px;
+}
+.about-section-right button{
+    margin-top: 20px;
+    font-size: 22px;
+    background: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-weight: 900;
+    transition: .3s;
+}
+
+.about-section-right button:hover{
+    background: white;
+    border: 2px solid black;
+    transition: .3s;
+   color: black;
+}
+
+.about-section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* service-section-styling */
+.service-section{
+    background: black;
+    padding: 50px 0;
+   width: 100%;
+}
+.service-section-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-section-body div{
+    color: white;
+    width: 320px;
+    margin-right: 70px;
+    text-align: center;
+    background: #333;
+    padding:10px 20px;
+    font-size: 17px;
+    transition: .7s;
+    margin-bottom: 10px;
+}
+.service-section-body div:hover{
+    background: crimson;
+    color: white;
+   box-shadow: 5px 5px  15px gray;
+
+}
+.service-section-body div:hover .icon{
+    color: white;
+}
+.service-section-body div .icon{
+    color: crimson;
+    font-size: 50px;
+    margin-bottom: 20px ;
+    transition: .7s;
+}
+
+/* skill-section-styling */
+.skill-section{
+    padding: 70px;
+}
+.skill-body-left{
+    float: left;
+    width: 45%;
+    text-align: justify;
+}
+.skill-body-right{
+    float: left;
+    width: 45%;
+    margin-left: 10%;
+}
+
+.common{
+    height: 50px;
+    width: 50px;
+    color: white;
+    background: crimson;
+    transition: width 2s;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.html:hover{
+    width: 90%;
+   
+}
+.css:hover{
+    width: 70%;
+}
+.js:hover{
+    width: 65%;
+}
+.nodejs:hover{
+    width: 80%;
+}
+ 
+.skill-section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* team-section-styling */
+
+.team-section{
+   background: black;
+   padding: 80px;
+}
+.team-section .team-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ .team-section .team-body div{
+   padding: 10px;
+     height: 290px;
+     width: 280px;
+     text-align: center;
+     background: #222;
+     color: white;
+   font-weight: 500;
+    transition: .3s ease all;
+    border-radius: 5px;
+    margin-top: 40px;
+ }
+ .team-section .team-body div:hover{
+     background: crimson;
+   
+ }
+ .team-section .team-body div:hover img{
+    height: 170px;
+    width: 170px;
+    transition: .3s ease all;
+    border: 4px solid black;
+ }
+ .team-section .team-body div img{
+     height: 130px;
+     width: 130px;
+     border-radius: 50%;
+     margin: auto;
+    display: block;
+    margin: auto;
+    margin-top: -40px;
+    border: 4px solid yellow;
+ }
+
+ .team-section .team-head{
+     text-align: center;
+     color: white;
+ }
+
+
+ /* contact-section-styling */
+
+
+ .contact-section{
+     padding: 80px;
+ }
+ .contact-body-left{
+     float: left;
+     width: 40%;
+ }
+ .contact-body-right{
+    float: right;
+    width: 40%;
+}
+
+.name .name-row{
+    display: flex;
+    margin-top: 25px;
+}
+
+.address .address-row{
+    display: flex;
+    margin-top: 25px;
+}
+
+.email .email-row{
+    display: flex;
+    margin-top: 25px;
+}
+
+.input-name, .input-email{
+    padding: 10px 20px;
+    width: 48%;
+}
+.input-name{
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #999;
+  
+}
+.input-email{
+    float: right;
+    border-radius: 5px;
+    border: 1px solid #999;
+    
+}
+.input-subject{
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+.input-message{
+    padding: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #999;
+
+}
+
+.contact-section .icon{
+    margin-right: 20px;
+    margin-top: 8px;
+    font-size: 25px;
+    color: crimson;
+}
+.contact-section button{
+    color: white;
+    background: crimson;
+   padding: 15px 22px;
+   margin-top: 20px;
+   width: 200px;
+   border: 2px solid crimson;
+  border-radius: 5px;
+  font-size: 20px;
+ transition: .3s;
+ font-weight: 500;
+}
+.contact-section button:hover{
+    background: white;
+    border: 2px solid crimson;
+    color: crimson;
+}
+ 
+.contact-section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* footer-section */
+.footer{
+    width: 100%;
+    padding: 40px 0;
+    background: #111;
+    color: #777;
+    text-align: center;
+   font-size: 20px;
+}
+
+
+.footer span{
+   
+    border-right: 2px solid #777;
+    padding: 0 8px;
+}
+.footer span:last-child{
+    border-right: none;
+}

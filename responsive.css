@@ -1,0 +1,100 @@
+@media  screen and (max-width:780px) {
+    .header .logo, .header .topnav{
+        float: none;
+    }
+    .topnav ul li{
+        float: none;
+    }
+    .home-section .home-left{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .home-section .home-right{
+        float: none;
+        width: 100%;
+        padding-bottom: 20px;
+        margin-left: 100px;
+    }
+    .about-section-left{
+        float: none;
+        display: none;
+    }
+    .about-section-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+.service-section-body{
+
+    flex-direction: column;
+}
+.service-section-body div{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.skill-body-left{
+    margin-bottom: 20px;
+    
+}
+.skill-body-left h1{
+    text-align: center;
+}
+.skill-body-left, .skill-body-right{
+    float: none;
+    width: 100%;
+}
+
+/* menubar-responsive */
+ .logo-right{
+      display: block;
+ }
+ .topnav .navbar{
+     display: none;
+     transition: .3s;
+ }
+
+ /* contact-section-responsive */
+ .contact-body-left{
+     float: none;
+     width: 100%;
+     margin-bottom: 30px;
+     text-align: center;
+ }
+ .contact-body-right{
+    float: none;
+    width: 100%;
+}
+
+
+
+}
+
+@media screen and (max-width:780px) {
+   .topnav .responsive{
+        display: block;
+        transition: .6s;
+    }
+}
+
+
+@media screen and (max-width:420px){
+    .team-section .team-body div{
+        height: 340px;
+    }
+}
+
+
+@media screen and (max-width:414px) {
+    .home-right h1{
+        font-size: 40px;
+    }
+    .home-section .home-right{
+        margin-left: 0;
+    }
+    .footer{
+        font-size: 10px;
+    }
+
+
+}
